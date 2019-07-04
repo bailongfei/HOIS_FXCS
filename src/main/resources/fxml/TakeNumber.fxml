@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="330.0" prefWidth="276.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.TakeNumberController">
+   <children>
+      <Label alignment="CENTER" layoutX="5.0" layoutY="27.0" prefHeight="37.0" prefWidth="141.0" text="XXX医院">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="152.0" layoutY="38.0" prefHeight="26.0" prefWidth="118.0" text="2019-06-28">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="19.0" layoutY="97.0" prefHeight="45.0" prefWidth="234.0" text="眼科">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="3.0" layoutY="182.0" prefHeight="37.0" prefWidth="170.0" text="A10012">
+         <font>
+            <Font name="Arial Black" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="174.0" layoutY="182.0" prefHeight="37.0" prefWidth="101.0" text="当日有效">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="248.0" prefHeight="82.0" prefWidth="276.0" text="请到13号诊室门口候诊，过号请联系诊室，请等待重新呼叫" wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

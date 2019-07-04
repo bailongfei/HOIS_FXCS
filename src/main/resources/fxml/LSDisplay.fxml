@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" styleClass="rootDisplay" stylesheets="@../css/LSDisplay.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.LSDisplay">
+   <children>
+      <AnchorPane prefHeight="65.0" prefWidth="668.0" styleClass="topls" stylesheets="@../css/LSDisplay.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="29.0" layoutY="8.0" prefHeight="50.0" prefWidth="311.0" text="XXX处理窗口" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="1022.0" layoutY="21.0" prefHeight="37.0" prefWidth="311.0" text="2019年6月26号  15:23:05 星期四" textFill="WHITE" AnchorPane.rightAnchor="35.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="-1.0" layoutY="64.0" prefHeight="356.0" prefWidth="668.0" styleClass="enter" stylesheets="@../css/LSDisplay.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutY="1.0" prefHeight="94.0" prefWidth="668.0" styleClass="lable1" stylesheets="@../css/LSDisplay.css" text="请A10010号到2号窗口" textFill="#fbff00" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="60.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutY="95.0" prefHeight="78.0" prefWidth="1366.0" styleClass="lable2" stylesheets="@../css/LSDisplay.css" text="请A1009号到1号窗口" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="49.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutY="171.0" prefHeight="71.0" prefWidth="1366.0" styleClass="lable3" stylesheets="@../css/LSDisplay.css" text="请A1008号到3号窗口" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="48.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutY="240.0" prefHeight="88.0" prefWidth="1366.0" styleClass="lable4" stylesheets="@../css/LSDisplay.css" text="请A1007号到4号窗口" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="47.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutY="326.0" prefHeight="94.0" prefWidth="1366.0" styleClass="lable5" stylesheets="@../css/LSDisplay.css" text="请A1006号到1号窗口" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="46.0" />
+               </font></Label>
+         </children></AnchorPane>
+      <AnchorPane layoutY="419.0" prefHeight="50.0" prefWidth="668.0" styleClass="down" stylesheets="@../css/LSDisplay.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="668.0" text="请注意你的排队号码，过号后请重新取票。" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

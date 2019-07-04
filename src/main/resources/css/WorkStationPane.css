@@ -1,0 +1,213 @@
+/*.root{
+    -fx-border-width: 2px;
+    -fx-border-color: rgb(100, 137, 180);
+}*/
+.top1 {
+    -fx-background-color: rgb(100, 137, 180);
+}
+
+.left1 {
+    -fx-background-color: rgb(100, 137, 180);
+}
+
+.leftcss1 {
+    -fx-border-width: 2px;
+    -fx-border-color: rgb(100, 137, 180);
+}
+
+.leftlable1 {
+    -fx-background-color: rgb(255, 164, 11);
+}
+
+.leftlable2 {
+    -fx-background-color: rgb(255, 164, 11);
+}
+
+.leftlable12 {
+    -fx-border-color: rgb(255, 164, 11);
+    -fx-background-color: white;
+
+}
+
+.leftlable22 {
+
+}
+
+#wc { /*设置背景颜色渐变*/
+    -fx-background-color: linear-gradient(to right, #00fffc, #fff600); /*设置圆角*/
+    -fx-background-radius: 100%;
+    -fx-border-radius: 100%;
+    /*-jfx-button-type: RAISED;*/
+}
+
+.gh1 {
+    -fx-background-color: linear-gradient(to right, #18FF3E, #fff600); /*设置圆角*/
+    -fx-background-radius: 100%;
+    -fx-border-radius: 100%;
+    /*-fx-background-color: #ffff;*/
+}
+
+#xyw {
+    -fx-background-color: #59dc54;
+    /*-fx-text-fill: white;*/
+    -fx-effect: dropshadow(three-pass-box, #000000, 10.0,0, 0, 1);
+    /*-fx-cursor: hand;*/
+}
+
+#buttonClass{
+    -fx-background-color: #59dc54;
+    -fx-text-fill: white;
+}
+
+#buttonClass:hover {
+    -fx-background-color: rgb(171, 221, 24);
+    -fx-text-fill: white;
+
+}
+
+.yh {
+    -fx-background-color: #59dc54;
+    -fx-text-fill: white;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+}
+
+.yh:hover {
+    -fx-background-color: rgb(171, 221, 24);
+    -fx-text-fill: white;
+}
+
+.qrdd {
+    -fx-background-color: #59dc54;
+    -fx-text-fill: white;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+}
+
+.qrdd:hover {
+    -fx-background-color: rgb(171, 221, 24);
+    -fx-text-fill: white;
+}
+
+.qxhj {
+    -fx-background-color: #59dc54;
+    -fx-text-fill: white;
+}
+
+.qxhj:hover {
+    -fx-background-color: rgb(171, 221, 24);
+    -fx-text-fill: white;
+}
+
+.tab1 {
+
+}
+
+/*#xyw:hover{
+    -fx-background-color: #dc3122;
+}
+#xyw:selected{
+    -fx-background-color: #ff6060;
+    !*-fx-text:"STOP";*!
+}
+#xyw:selected:focused{
+    -fx-background-color: #02b944;
+   !* -fx-text:"STOP";*!
+}*/
+
+/*Tab通用样式*/
+.tab1{
+    -fx-font-size: 14px;
+    -fx-background-color: white;
+    -fx-background-size: 15px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 100%;
+}
+
+.tab1:hover{
+    -fx-background-color: #1a83e1;
+    -fx-text-fill: white;
+    -fx-color: #1a83e1;
+}
+
+.tab1:selected {
+    -fx-background-color: #1a83e1;
+    -fx-text-fill: white;
+    -fx-color: #1a83e1;
+}
+.tab2{
+    -fx-font-size: 14px;
+    -fx-background-color: white;
+    -fx-background-size: 15px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 100%;
+}
+
+.tab2:hover{
+    -fx-background-color: #1a83e1;
+    -fx-text-fill: white;
+    -fx-color: #1a83e1;
+}
+
+.tab2:selected {
+    -fx-background-color: #1a83e1;
+    -fx-text-fill: white;
+    -fx-color: #1a83e1;
+}
+.tab3{
+    -fx-font-size: 14px;
+    -fx-background-color: white;
+    -fx-background-size: 15px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 100%;
+}
+
+.tab3:hover{
+    -fx-background-color: #1a83e1;
+    -fx-text-fill: white;
+    -fx-color: #1a83e1;
+}
+
+.tab3:selected {
+    -fx-background-color: #1a83e1;
+    -fx-text-fill: white;
+    -fx-color: #1a83e1;
+}
+/**
+ *TabPane通用样式
+ */
+.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color: #EBF0FA;
+    -fx-text-fill: white;
+}
+
+.table-pane {
+    -fx-background-color: #fff;
+}
+
+/**
+ *自定义Tab样式
+ */
+/*.mytab {
+    -fx-pref-width: 132px;
+    -fx-pref-height: 45px;
+    -fx-background-image: url('../../images/icon_1.png');
+    -fx-background-position: 20 12;
+    -fx-background-size: 15px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 100%;
+}
+
+.mytab:hover {
+    -fx-background-image: url('../../images/icon_1on.png');
+    -fx-font-size: 16px;
+}
+
+.mytab:selected {
+    -fx-background-image: url('../../images/icon_1on.png');
+    -fx-font-size: 16px;
+}*/
+
+
+
+
