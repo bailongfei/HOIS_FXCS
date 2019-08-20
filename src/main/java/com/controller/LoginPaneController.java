@@ -8,7 +8,12 @@ import com.entity.BasicSrvGroup;
 import com.entity.BasicStaffInfo;
 import com.entity.BasicWorkStation;
 import com.node.Alert;
+import com.util.IniUtil;
 import com.util.PageUtil;
+import io.reactivex.Observable;
+import io.reactivex.rxjavafx.schedulers.JavaFxScheduler;
+import io.reactivex.schedulers.Schedulers;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -21,6 +26,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 public class LoginPaneController {
     public static Stage stage;
@@ -40,7 +46,7 @@ public class LoginPaneController {
     @FXML
     private Label timeLabel;
 
-    private static SimpleDateFormat sdf = new SimpleDateFormat("YYYY/MM/dd HH:mm:ss");
+    //private static SimpleDateFormat sdf = new SimpleDateFormat("YYYY/MM/dd HH:mm:ss");
     private String DEFAULT_TIME_FORMAT = "yyyy-MM-dd hh:mm:ss";
     private String time;
     private int ONE_SECOND = 1000;
@@ -49,8 +55,8 @@ public class LoginPaneController {
         System.out.println("javafx初始化");
         bindMouseEvent();
         bindKeyEvent();
-
-        timeLabel.setText(sdf.format(new Date()));
+        showTime();
+        //timeLabel.setText(sdf.format(new Date()));
 
         /*configTimeArea();*/
         /*LoginPaneController df2=new LoginPaneController();
@@ -165,7 +171,7 @@ public class LoginPaneController {
     *
     * */
     private  void Login(BasicWorkStation workStationInfo, String loginName, String passwork, Integer basicSrvGroup) throws IOException {
-        String s = WebServices.LoginSerices(1, loginName, passwork);
+        String s = WebServices.LoginSerices(Integer.valueOf(IniUtil.getConfig().get("WSID")), loginName, passwork);
         JSONObject object= JSON.parseObject(s);
         Object result = object.get("result");
        /* ProgressForm progressForm = ProgressForm.getInstance(stage);
@@ -191,4 +197,18 @@ public class LoginPaneController {
     private void getWorkStationInfo() {
 
     }
+
+    /*时间显示*/
+    private void showTime(){
+        //label2
+        Observable.interval(1, TimeUnit.SECONDS)
+                .observeOn(Schedulers.io())
+                .subscribeOn(JavaFxScheduler.platform())
+                .subscribe(it->{
+                    Platform.runLater(()->{
+                        timeLabel.setText(sdf.format(new Date()));
+                    });
+                });
+    }
+    private static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 }

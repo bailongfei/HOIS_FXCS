@@ -1,12 +1,11 @@
-package com;
-
+package com.util;
 
 import com.jacob.activeX.ActiveXComponent;
 import com.jacob.com.Dispatch;
 import com.jacob.com.Variant;
 
-public class TestJacob {
-    public static void main(String[] args) {
+public class JacobUtil {
+    public  void  JacobJob(String jobword){
         // 创建与微软应用程序的新连接。传入的参数是注册表中注册的程序的名称。
         ActiveXComponent sap = new ActiveXComponent("Sapi.SpVoice");
 
@@ -18,7 +17,7 @@ public class TestJacob {
 
 // 语音朗读速度 -10 到 +10
 
-            sap.setProperty("Rate", new Variant(-3));
+            sap.setProperty("Rate", new Variant(-4));
 
 // 获取执行对象
 
@@ -26,7 +25,7 @@ public class TestJacob {
 
 // 执行朗读
 
-            Dispatch.call(sapo, "Speak", new Variant("请,A10012,到四号窗口就诊."));
+            Dispatch.call(sapo, "Speak", new Variant(jobword));
 
 // 关闭执行对象
 
@@ -45,5 +44,4 @@ public class TestJacob {
         }
 
     }
-
 }

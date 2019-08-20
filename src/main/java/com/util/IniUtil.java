@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class IniUtil {
 
-    public static Map<String,String> getIPConfig(){
+    public static Map<String,String> getConfig(){
         Map<String, String> map;
         try {
             File file = new File("IPConfig.ini");
@@ -21,8 +21,11 @@ public class IniUtil {
 
                 if (section!=null){
                     String ipAddress = section.get("ipAddress");
+                    String wsId=section.get("WSID");
+                    String Queue_Pos=section.get("QueuePos");
                     map.put("ipAddress", ipAddress);
-
+                    map.put("WSID",wsId);
+                    map.put("Queue_Pos",Queue_Pos);
                 } else {
                     return null;
                 }
@@ -36,8 +39,8 @@ public class IniUtil {
 
 
     public static void main(String[] args) {
-        System.out.println(getIPConfig());
-        System.out.println(getIPConfig().get("loginName")+":"+getIPConfig().get("ipAddress"));
+        System.out.println(getConfig());
+        System.out.println(getConfig().get("loginName")+":"+getConfig().get("ipAddress"));
     }
 
 }
